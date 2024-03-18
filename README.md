@@ -16,6 +16,12 @@ This is not a perfect clone, the main purpose of this project is to explore and 
 
 ![latex-sample](./assets/image/latex-sample.png)
 
+## Declaration
+
+If you want to see a more realistic example rendered using this template, check [this](https://github.com/bamboovir/typst-resume-template/blob/main/huiming-sun-sde-resume.pdf). This is the resume I built in 2022, may be somewhat out of date and not actively maintained, and is not intended to be an accurate description of any of my current experiences but is intended solely to demonstrate the aesthetics of this template.
+
+You are free to take my .typ template and modify it to create your own resume. **Please don't use my resume for anything else without my permission, though!**
+
 ## Development Environment
 
 - Install [Typst](https://github.com/typst/typst)
@@ -39,6 +45,10 @@ just dev
 ```bash
 just containerized-build
 ```
+
+## GitHub Action for resume build automation
+
+- [Resume Build CI Pipeline](https://github.com/bamboovir/typst-resume-template/actions/workflows/build-resume.yml)
 
 ## Credit
 
