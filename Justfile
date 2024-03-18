@@ -1,5 +1,6 @@
 set shell:= ["bash", "-uceE"]
 
+CONTAINER_RUNTIME := "podman"
 PROJECT_ROOT := `git rev-parse --show-toplevel`
 OUTPUT_FILENAME := "resume.pdf"
 TEMPLATE := "latex"
@@ -11,35 +12,35 @@ default:
     @just --list
 
 build:
-    @typst --font-path "{{FONT_PATH}}" compile resume.typ "{{OUTPUT_FILENAME}}"
+    @typst compile --font-path "{{FONT_PATH}}" resume.typ "{{OUTPUT_FILENAME}}"
 
 dev:
-    @typst --font-path "{{FONT_PATH}}" watch resume.typ "{{OUTPUT_FILENAME}}"
+    @typst watch --font-path "{{FONT_PATH}}" resume.typ "{{OUTPUT_FILENAME}}"
 
 font:
-    @typst --font-path "{{FONT_PATH}}" --fonts --variants
+    @typst fonts --font-path "{{FONT_PATH}}" --variants
 
 clean:
     @rm -f *.pdf
 
 containerized-build:
-    @podman run --rm -t \
+    @{{CONTAINER_RUNTIME}} run --rm -t \
         -v "{{PROJECT_ROOT}}:/mnt" \
         -w "/mnt" \
         "{{TYPST_IMAGE_REF}}" \
-        typst --font-path "{{FONT_PATH}}" compile resume.typ "{{OUTPUT_FILENAME}}"
+        typst compile --font-path "{{FONT_PATH}}" resume.typ "{{OUTPUT_FILENAME}}"
 
 containerized-dev:
-    @podman run --rm -it -v \
+    @{{CONTAINER_RUNTIME}} run --rm -it -v \
         "{{PROJECT_ROOT}}:/mnt" \
         -w "/mnt" \
         --init \
         "{{TYPST_IMAGE_REF}}" \
-        typst --font-path "{{FONT_PATH}}" watch resume.typ "{{OUTPUT_FILENAME}}"
+        typst watch --font-path "{{FONT_PATH}}" resume.typ "{{OUTPUT_FILENAME}}"
 
 containerized-font:
-    @podman run --rm -t -v \
+    @{{CONTAINER_RUNTIME}} run --rm -t -v \
         "{{PROJECT_ROOT}}:/mnt" \
         -w "/mnt" \
         "{{TYPST_IMAGE_REF}}" \
-        typst --font-path "{{FONT_PATH}}" fonts --variants
+        typst fonts --font-path "{{FONT_PATH}}" --variants

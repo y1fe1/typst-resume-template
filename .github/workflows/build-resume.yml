@@ -15,8 +15,9 @@ jobs:
             --workdir "/mnt" \
             "ghcr.io/typst/typst:latest" \
             typst \
+            compile \
             --font-path "./templates/latex/assets/fonts" \
-            compile resume.typ "resume.pdf"
+            resume.typ "resume.pdf"
       - name: Upload Resume
         uses: actions/upload-artifact@v3
         with:

@@ -1,5 +1,7 @@
 #import "templates/latex/template.typ": *
 
+#let today = datetime.today()
+
 #show: resume.with(
   author: (
       firstname: "Aaaaaaa", 
@@ -13,8 +15,7 @@
         "Aaaa Aaaaa Aaaaaaaaa",
       )
   ),
-  //TODO: https://github.com/typst/typst/issues/204
-  date: "Aaaaa 00, 0000"
+  date: today.display("[month repr:long] [day], [year]")
 )
 
 #resume_section("Education")
