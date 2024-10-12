@@ -80,7 +80,7 @@
   
   let name = {
     align(center)[
-      #pad(bottom: 5pt)[
+      #pad(bottom: 1pt)[
         #block[
           #set text(size: 25pt, style: "normal")
           #text(weight: "light")[#author.firstname]
@@ -185,6 +185,11 @@
   smallcaps[#body]
 }
 
+#let resume_position_link(body,link_string) = {
+  set text(size: 12pt, style: "normal", weight: "bold")
+  link(link_string)[#body]
+}
+
 #let resume_category(body) = {
   set text(size: 11pt, weight: "bold")
   body
@@ -195,46 +200,89 @@
   text[Cumulative GPA: #box[#strong[#numerator] / #denominator]]
 }
 
+#let education_desc(desc) = {
+  set text(size: 9pt, style: "normal", weight: "regular" )
+  desc
+}
 // sections specific components
-#let education_item(organization, degree, gpa, time_frame) = {
+#let education_item(organization, degree, gpa, time_frame,desc) = {
   set block(above: 0.7em, below: 0.7em)
   set pad(top: 5pt)
 
-  pad[
-    #justify_align[
-      #resume_organization[#organization]
-    ][
-      #gpa
+  if(desc != none){
+    pad[
+      #justify_align[
+        #resume_organization[#organization]
+      ][
+        #gpa
+      ]
+      #justify_align[
+        #resume_degree[#degree]
+      ][
+        #resume_time[#time_frame]
+      ]
+      #justify_align[
+        #education_desc[#desc]
+      ][]
     ]
-    #justify_align[
-      #resume_degree[#degree]
-    ][
-      #resume_time[#time_frame]
+  } else {
+    pad[
+      #justify_align[
+        #resume_organization[#organization]
+      ][
+        #gpa
+      ]
+      #justify_align[
+        #resume_degree[#degree]
+      ][
+        #resume_time[#time_frame]
+      ]
     ]
-  ]
+  }
 }
 
+
 #let work_experience_item_header(
-  company,
-  location,
   position,
+  location,
+  link,
   time_frame
 ) = {
   set block(above: 0.7em, below: 0.7em)
   set pad(top: 5pt)
 
-  pad[
-    #justify_align[
-      #resume_organization[#company]
-    ][
-      #resume_location[#location]
+  set box(height: 11pt)
+  let link_icon = box(image("assets/icons/link.svg"))
+  
+  if(link != ""){
+      pad[
+      #justify_align[
+        #link_icon
+        #resume_position_link(position,link)
+      ][ 
+        *#location*
+      ]
+      #justify_align[
+
+      ][
+        #resume_time[#time_frame]
+      ]
     ]
-    #justify_align[
-      #resume_position[#position]
-    ][
-      #resume_time[#time_frame]
+  } else {
+      pad[
+      #justify_align[
+        #resume_organization[#position]
+      ][ 
+        *#location*
+      ]
+      #justify_align[
+
+      ][
+        #resume_time[#time_frame]
+      ]
     ]
-  ]
+  }
+
 }
 
 #let personal_project_item_header(
@@ -244,7 +292,7 @@
   start_time,
 ) = {
   set block(above: 0.7em, below: 0.7em)
-  set pad(top: 5pt)
+  set pad(top: 4pt)
   
   pad[
     #justify_align[
@@ -262,7 +310,7 @@
 
 #let skill_item(category, items) = {
   set block(below: 0.65em)
-  set pad(top: 5pt)
+  set pad(top: 4pt)
   
   pad[
     #grid(
