@@ -113,7 +113,7 @@
   "Junior Technical Support Analyst ",
   "AGF Management Inc, ON",
   "",
-  "April. 2024 - Aug. 2024",
+  "April. 2023 - Aug. 2023",
 )
 
 #resume_item[
