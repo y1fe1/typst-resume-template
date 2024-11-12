@@ -102,9 +102,7 @@
 
 #resume_item[
   - *Pionnered Designed and developed* a testing software build using C\# and.net framework for laser sensor systems, creating a *first-of-its-kind tool* at the company that integrates proprietary algorithms with third-party Motion Control API.
-  - *Transformed testing workflow* with intorducing for XML scripts input to allow automated testing, providing the company with a scalable, repeatable testing solution that improved the speed and reliability of sensor system validations
-
-  - Implemented real-time data capture and dynamic visualization using the OxyPlot library, enabling comprehensive analysis of sensor performance under static and dynamic conditions.
+  - *Transformed testing workflow* with intorducing for XML scripts input to allow automated testing, Implemented real-time data capture and dynamic visualization using the OxyPlot library, enabling comprehensive analysis of sensor performance under various conditions.
 
   - Progressed development of another testing software using MFC framework , implementing focus algorithms for various surface types to automate sensor focusing and value collection. Enhanced code quality by reducing redundancy and designing a robust object-oriented programming structure, improving maintainability and scalability of the software
 ]
@@ -126,16 +124,26 @@
 #resume_section("Personal Project")
 
 #personal_project_item_header(
+  "OpenGl Renderer",
+  "Delft, Netherland",
+  "Developer",
+  "Oct. 2024"
+)
+
+#resume_item[
+  - Developed a real-time graphic renderer using OpenGL and C++ 20.
+  - featuring multiple shading models,HDR skybox, environment mapping, deferred rendering, and post-processing effects. Implemented advanced features like Deferred rendering, image-based lighting, and realistic material textures for enhanced realism.
+]
+
+#personal_project_item_header(
   "Chat Processing for Moss LLM",
   "Waterloo, ON",
   "Data Cleaning",
   "July. 2023",
 )
 
-#resume_item[
-  - Developed efficient Python script to process large-scale multilingual chat conversations in JSONL format, extracting key user instructions and assistant outputs while systematically cleaning and preprocessing the text data for further analysis.
-  - Leveraged language identification library like fastText to accurately filter out non-English content, focusing on English-language conversations, ensuring high-quality, relevant data for downstream tasks.
-  - Streamlined data processing workflow by outputting the cleaned and sanitized data into a structured JSON file, improving data integrity and making it ready for immediate use in model training or other applications.
+#resume_item[ 
+  - Developed a Python script to process and clean large-scale multilingual chat data, extracting key instructions and outputs, filtering non-English content, and structuring the data for model training.
 ]
 
 #personal_project_item_header(

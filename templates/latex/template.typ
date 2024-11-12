@@ -145,7 +145,7 @@
 // general style
 #let resume_section(title) = {
   set text(
-    size: 16pt,
+    size: 14pt,
     weight: "thin",
   )
   align(left)[
@@ -171,12 +171,12 @@
 }
 
 #let resume_organization(body) = {
-  set text(size: 12pt, style: "normal", weight: "bold")
+  set text(size: 11pt, style: "normal", weight: "bold")
   body
 }
 
 #let resume_location(body) = {
-  set text(size: 12pt, style: "normal", weight: "light")
+  set text(size: 11pt, style: "normal", weight: "light")
   body
 }
 
@@ -186,7 +186,7 @@
 }
 
 #let resume_position_link(body,link_string) = {
-  set text(size: 12pt, style: "normal", weight: "bold")
+  set text(size: 11pt, style: "normal", weight: "bold")
   link(link_string)[#body]
 }
 
@@ -196,7 +196,7 @@
 }
 
 #let resume_gpa(numerator, denominator) = {
-  set text(size: 12pt, style: "normal", weight: "light")
+  set text(size: 11pt, style: "normal", weight: "light")
   text[Cumulative GPA: #box[#strong[#numerator] / #denominator]]
 }
 
@@ -207,7 +207,7 @@
 // sections specific components
 #let education_item(organization, degree, gpa, time_frame,desc) = {
   set block(above: 0.7em, below: 0.7em)
-  set pad(top: 5pt)
+  set pad(top: 4pt)
 
   if(desc != none){
     pad[
