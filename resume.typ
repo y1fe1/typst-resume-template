@@ -50,7 +50,7 @@
     strong[Python], 
     strong[Scala], 
     strong[Java],
-    strong[Shell Script], 
+    strong[Bash], 
     "R",
     "SQL",
     "Racket",  
@@ -101,10 +101,10 @@
 )
 
 #resume_item[
-  - *Pionnered Designed and developed* a testing software build using C\# and.net framework for laser sensor systems, creating a *first-of-its-kind tool* at the company that integrates proprietary algorithms with third-party Motion Control API.
+  - *Designed and developed* a testing software build using C\# and.net framework for laser sensor systems, integrates proprietary algorithms with third-party Motion Control API.
   - *Transformed testing workflow* with intorducing for XML scripts input to allow automated testing, Implemented real-time data capture and dynamic visualization using the OxyPlot library, enabling comprehensive analysis of sensor performance under various conditions.
 
-  - Progressed development of another testing software using MFC framework , implementing focus algorithms for various surface types to automate sensor focusing and value collection. Enhanced code quality by reducing redundancy and designing a robust object-oriented programming structure, improving maintainability and scalability of the software
+  - Progressed development of another testing software with MFC framework , implementing focus algorithms for various surface types to automate sensor focusing and value collection. Enhanced code quality by reducing redundancy and designing a robust OOP structure, improving maintainability and scalability of the software
 ]
 
 #work_experience_item_header(
@@ -118,21 +118,20 @@
   - Automated IT device management through Microsoft Power Automate and Microsoft SharePoint, enabling the automatic updating of device records for loaning, usage, incident and repair status. 
 
   - Use MS Power BI to create data visualization of data records from Service Now to analyze device repair rate, and incident counts per staff member, and identify outstanding incident category from 2022 to 2023.
-
 ]
 
 #resume_section("Personal Project")
 
 #personal_project_item_header(
-  "OpenGl Renderer",
+  "OpenGL Renderer",
   "Delft, Netherland",
   "Developer",
   "Oct. 2024"
 )
 
 #resume_item[
-  - Developed a real-time graphic renderer using OpenGL and C++ 20.
-  - featuring multiple shading models,HDR skybox, environment mapping, deferred rendering, and post-processing effects. Implemented advanced features like Deferred rendering, image-based lighting, and realistic material textures for enhanced realism.
+  - Developed a real-time graphic renderer using OpenGL and C++20.
+  - Implemented various features including multiple shading models (Lambert, Blinn-Phong, PBR), HDR environment mapping, deferred rendering, post-processing effects, image-based lighting, and realistic material textures for enhanced realism.
 ]
 
 #personal_project_item_header(
@@ -154,7 +153,7 @@
 )
 
 #resume_item[
-  - Designed a Hearthstone like card game using C++20 that offers two players to play game against each other using card deck built by players through both Text display and GUI display using X11.
+  - Designed a Hearthstone-like card game using C++20 that offers two players to play game against each other using card deck built by players through both Text display and GUI display using X11.
 
   - Employing various techniques such as polymorphism, inheritance, and various design patterns such as decorator pattern, observer pattern to ensure a maintainable program following the low coupling, high cohesion principle.
 ]
