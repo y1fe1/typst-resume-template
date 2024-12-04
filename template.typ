@@ -144,7 +144,7 @@
 // general style
 #let resume_section(title) = {
   set text(
-    size: 16pt,
+    size: 14pt,
     weight: "regular"
   )
   align(left)[
@@ -158,7 +158,7 @@
 
 #let resume_item(body) = {
   set text(size: 10pt, style: "normal", weight: "light")
-  set par(leading: 0.65em)
+  set par(leading: 0.45em)
   body
 }
 
@@ -199,7 +199,7 @@
 
 // sections specific components
 #let education_item(organization, degree, gpa, time_frame) = {
-  set block(above: 0.7em, below: 0.7em)
+  set block(above: 0.5em, below: 0.5em)
   set pad(top: 5pt)
   pad[
     #justify_align[
@@ -221,7 +221,7 @@
   position,
   time_frame
 ) = {
-  set block(above: 0.7em, below: 0.7em)
+  set block(above: 0.5em, below: 0.5em)
   set pad(top: 5pt)
   pad[
     #justify_align[
@@ -243,7 +243,7 @@
   position,
   start_time,
 ) = {
-  set block(above: 0.7em, below: 0.7em)
+  set block(above: 0.5em, below: 0.5em)
   set pad(top: 5pt)
   pad[
     #justify_align[

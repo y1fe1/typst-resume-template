@@ -50,7 +50,7 @@
     strong[Python], 
     strong[Scala], 
     strong[Java],
-    strong[Bash], 
+    "Bash", 
     "R",
     "SQL",
     "Racket",  
@@ -63,9 +63,10 @@
     strong[Apache Spark],
     strong[Flink],
     strong[OpenGL], 
-    strong[Razor], 
     "Numpy",
     "Scikit-Learn",
+    "pandas",
+    "Razor", 
     "Node.js", 
     "Tailwind CSS", 
   )
@@ -83,14 +84,6 @@
   )
 )
 
-#skill_item(
-  "Languages",
-  (
-    "Native in Mandrain Chinese and English",
-  )
-)
-
-
 #resume_section("Experience")
 
 #work_experience_item_header(
@@ -101,10 +94,11 @@
 )
 
 #resume_item[
-  - *Designed and developed* a testing software build using C\# and.net framework for laser sensor systems, integrates proprietary algorithms with third-party Motion Control API.
-  - *Transformed testing workflow* with intorducing for XML scripts input to allow automated testing, Implemented real-time data capture and dynamic visualization using the OxyPlot library, enabling comprehensive analysis of sensor performance under various conditions.
+  - *Designed and developed a testing software* build using C\# and .NET framework for laser sensor systems, integrates proprietary algorithms with third-party Motion Control API.
+  - *Enhanced Testing Workflow* by intorducing technique such as XML script-based automated testing, leveraging async operations for efficiency.
+  - Implemented real-time data capture and dynamic visualization using the *OxyPlot* library.
 
-  - Progressed development of another testing software with MFC framework , implementing focus algorithms for various surface types to automate sensor focusing and value collection. Enhanced code quality by reducing redundancy and designing a robust OOP structure, improving maintainability and scalability of the software
+  - *Developed testing software* with *MFC framework*, implementing focus algorithms to automate sensor focusing and data collection across various surface types.
 ]
 
 #work_experience_item_header(
@@ -135,14 +129,15 @@
 ]
 
 #personal_project_item_header(
-  "Chat Processing for Moss LLM",
-  "Waterloo, ON",
-  "Data Cleaning",
-  "July. 2023",
+  "Anomaly Detection for Sensor Signals",
+  "Delft, Netherland",
+  "Data processing",
+  "Dec. 2024",
 )
 
 #resume_item[ 
-  - Developed a Python script to process and clean large-scale multilingual chat data, extracting key instructions and outputs, filtering non-English content, and structuring the data for model training.
+  - Developed a Python script to process,detect and predict anomalies in sensor signals 
+  - Employed Dynamic Time Warping (DTW) and Principal Component Analysis (PCA)  for Outlier Detection, Isolation Forest for predictive modeling and anomaly signal analysis
 ]
 
 #personal_project_item_header(
@@ -154,8 +149,6 @@
 
 #resume_item[
   - Designed a Hearthstone-like card game using C++20 that offers two players to play game against each other using card deck built by players through both Text display and GUI display using X11.
-
-  - Employing various techniques such as polymorphism, inheritance, and various design patterns such as decorator pattern, observer pattern to ensure a maintainable program following the low coupling, high cohesion principle.
 ]
 
 
