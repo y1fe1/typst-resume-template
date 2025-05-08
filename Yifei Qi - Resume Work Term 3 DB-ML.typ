@@ -7,7 +7,7 @@
       firstname: "Yifei", 
       lastname: "Qi",
       email: "y7qi@uwaterloo.ca", 
-      phone: "(+1) 647 947 1155",
+      phone: "(+1) 437 858 5686",
       github: "y1fe1",
       linkedin: "yifei-qi-846087249/",
       positions: (
@@ -16,7 +16,7 @@
   date: today.display("[month repr:long] [day], [year]")
 )
 
-#resume_section("Technical Skills")
+#resume_section("Skills")
 
 #skill_item(
   "Program Language",
@@ -54,10 +54,10 @@
     "MiniConda",
     "Docker",
     "WSL2",
-    "Visual Studio",
     "MySQL",
     "Git",
     "Jenkins",
+    "AWS",
   )
 )
 
@@ -74,8 +74,6 @@
   - *Designed and developed a testing software* build using C\# and .NET framework for laser sensor systems, integrates proprietary algorithms with third-party Motion Control API.
   - *Enhanced Testing Workflow* by intorducing technique such as XML script-based automated testing, leveraging async operations for efficiency.
   - Implemented real-time data capture and dynamic visualization using the *OxyPlot* library.
-
-  - *Developed testing software* with *MFC framework*, implementing focus algorithms to automate sensor focusing and data collection across various surface types.
 ]
 
 #work_experience_item_header(
@@ -88,14 +86,14 @@
 #resume_item[
   - Automated IT device management through Microsoft Power Automate and Microsoft SharePoint, enabling the automatic updating of device records for loaning, usage, incident and repair status. 
 
-  - Use MS Power BI to create data visualization of data records from Service Now to analyze device repair rate, and incident counts per staff member, and identify outstanding incident category from 2022 to 2023.
+  - Use MS Power BI to visualize data records from Service Now to analyze device repair rate, and incident counts per staff member, and identify outstanding incident category from 2022 to 2023.
 ]
 
 #resume_section("Personal Project")
 
 #personal_project_item_header(
   "Causal-Order Broadcast Protocol",
-  "TU Delft, Netherland",
+  "Netherland",
   "Developer",
   "Nov-Jan. 2024"
 )
@@ -103,31 +101,34 @@
 #resume_item[
   - Engineered a *Causal-Order Broadcast Protocol* in Distributed System using Python with IPv8 p2p network communication between nodes running in Docker container.
 
-  - Incorporated the *Bracha's reliable broadcast protocol* and *Dolev Algorithm* to ensure reliable broadcasts with *fault-tolerance* to *Byzantine behaviors* in non-fully connected networks to maintain *message integrity* and *fault-resilience* under diverse network conditions.
+  - Incorporated the *Bracha's reliable broadcast protocol* and *Dolev Algorithm* to ensure reliable broadcasts with *fault-tolerance* to Byzantine behaviors in non-fully connected networks to maintain message integrity and fault-resilience under diverse network conditions.
 ]
 
 #personal_project_item_header(
-
-  "OpenGL Renderer",
-  "Delft, Netherland",
+  "Word2Vec Article Classification",
+  "Netherland",
   "Developer",
-  "Oct. 2024"
+  "Jan. 2024",
 )
 
 #resume_item[
-  - Developed a real-time *graphic renderer* using *OpenGL* and *C++20*.
-  - Implemented various features including multiple shading models (Lambert, Blinn-Phong, PBR), HDR environment mapping, deferred rendering, post-processing effects, image-based lighting, and realistic material textures for enhanced realism.
+  - Developed a Python script to classify Articles dataset in graph structure containing more than 20,000 nodes
+
+  - Employed Random Walk algorithm and *Word2Vec* Framework to generate Node Embedding for graph representation and utilizes *K-NN* for effective classification of graph nodes based on their embeddings. 
 ]
 
+
 #personal_project_item_header(
-  "Sorcery",
-  "University of Waterloo, ON",
-  "Developer and Designer",
-  "Nov. 2023",
+  "Anomaly Detection for Sensor Signals",
+  "Netherland",
+  "Data processing",
+  "Dec. 2024",
 )
 
-#resume_item[
-  - Designed a Hearthstone-like card game using C++20 that offers two players to play game against each other using card deck built by players through both Text display and GUI display using X11.
+#resume_item[ 
+  - Designed and implemented a Python script to detect and predict anomalies in sensor signal datasets.
+
+  - Employed *Principal Component Analysis (PCA)*  for Outlier Detection, Isolation Forest for predictive modeling and detecting outliers in the dataset.
 ]
 
 #resume_section("Education")
@@ -151,5 +152,5 @@
 ][
   President's International Experience Award
 ][
-  Course : Distributed System, Machine Learning, Computer Graphic
+  Course : Distributed System,Machine Learning,Computer Graphic
 ]

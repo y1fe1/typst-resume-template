@@ -63,7 +63,7 @@
           #"Résumé"
         ]
       ][
-        #counter(page).display()
+        #context(counter(page).display())
       ]
     ],
     footer-descent: 0pt,
